@@ -1,0 +1,29 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "auth": {
+    "providers": {
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "SER-COM",
+        "supportEmail": "diosanimatronico@gmail.com",
+        "authorizedRedirectUris": [
+          "https://ser-com-6de6b.firebaseapp.com/__/auth/handler",
+          "https://ser-com-6de6b.web.app/__/auth/handler"
+        ]
+      },
+      "emailPassword": true
+    }
+  }
+}
